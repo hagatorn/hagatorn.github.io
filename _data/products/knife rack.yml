@@ -1,0 +1,9 @@
+name: Kniferack
+since: '2014-12-25'
+materials:
+  - Sycamore
+price: "90.00" #all prices in GB £ in "" to make string not decimal.
+description: This beautifully finished kniferack is ideal for fitting in a draw due to its low profile and space efficient ranking of large and smaller knives. Equally, with it's elegant curves it would be a gracefull edition to any countertop.
+purchase: #array of data for etsy or amazon handmade
+images:  #a list or uri relative to site/assets/images/
+  - kniferack.jpg
