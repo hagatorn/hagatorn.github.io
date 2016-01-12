@@ -7,3 +7,4 @@ description: This beautifully finished kniferack is ideal for fitting in a draw 
 purchase: #array of data for etsy or amazon handmade
 images:  #a list or uri relative to site/assets/images/
   - kniferack.jpg
+  - kniferack01.jpg
