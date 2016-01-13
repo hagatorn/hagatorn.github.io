@@ -1,6 +1,6 @@
 ---
 layout: page
-title: products
+title: Products
 permalink: /products/
 ---
 {% assign products = site.data.products %}
