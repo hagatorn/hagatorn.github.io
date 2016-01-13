@@ -1,0 +1,10 @@
+.product-slider {
+
+	li{
+	  display:none;
+	  list-style:outside none none;
+        }
+	:first-child{
+          display:block;
+  	}
+}
