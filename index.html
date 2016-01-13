@@ -4,20 +4,23 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Home</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <ul class="product-slider">
+    {% assign products =  site.data.products %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+    {% for product in products %}
+      {% assign p=product[1] %}
+      <li >
+	<a>
+          <h2 class="product-title">{{ p.name }}</h2>
+
+          <img src="/images/{{ p.images[0] }}" alt="{{p.name}}"/>
+          {{p.description | markdownify }}
+        </a>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+ 
 </div>
