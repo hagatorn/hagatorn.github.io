@@ -1,10 +1,19 @@
 .product-slider {
 
 	li{
-	  display:none;
-	  list-style:outside none none;
+	  position:relative;
+	  div {	position: absolute;
+		bottom: 0px;
+		background-color: white;
+		display:none
+		}
+	  h2 {	position: absolute;
+		top: 0px;}
+          
         }
-	:first-child{
-          display:block;
-  	}
+
+
+	a:hover {
+		div {display:block;}
+	}
 }
