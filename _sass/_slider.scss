@@ -18,9 +18,9 @@
 		  }
 		  .slider-desc {	
 			background-color: white;
-			max-height: 0px;
-			-webkit-transition: max-height 2s; /* Safari */
-    			transition: max-height 2s;
+			max-height: 0;
+			transition: 2s;
+			overflow-y:hidden;
 
 		  	p:last-of-type {margin-bottom:0px; }			
 		  }
