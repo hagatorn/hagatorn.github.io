@@ -8,8 +8,13 @@
 	adaptiveHeight:true
 	});
     
-    $('.product-slider').hover(function(){
-    $('.slider-desc').slideDown();
-    return false;
-}); 
+    $('.product-slider').hover(
+    	function(){
+    		$('.slider-desc').slideDown();
+    		return false;
+		},
+	function(){
+		$('.slider-desc').slideUp();
+    		return false;
+	}); 
   });
