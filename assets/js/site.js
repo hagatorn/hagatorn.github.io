@@ -6,5 +6,10 @@
 	loop:true,
 	pause: 6000,
 	adaptiveHeight:true
-	}); 
+	});
+    
+    $('.product-slider').hover(function(){
+    $('.slider-desc').toggleClass('slide-up');
+    return false;
+}); 
   });
