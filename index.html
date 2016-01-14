@@ -13,12 +13,17 @@ layout: default
       {% assign p=product[1] %}
       <li >
 	<a>
-          <h2 class="product-title">{{ p.name }}</h2>
+          <div class="slider-text">
+		
+		  <h2 class="slider-title">{{ p.name }}</h2>          
+		  <div class="slider-desc">
+			{{p.description | markdownify }}
+		  </div>
+
+	  </div>
 
           <img src="/images/{{ p.images[0] }}" alt="{{p.name}}"/>
-          <div class="slider-desc">
-		{{p.description | markdownify }}
-	  </div>
+
         </a>
       </li>
     {% endfor %}
