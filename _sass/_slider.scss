@@ -35,9 +35,7 @@
 	    	  max-width: 100%;
 		  }
 		  
-		  a:hover {
-		    	cursor:pointer;
-		    	.slider-desc {
+		  a:hover > .slider-desc {
 				max-height:30%;
 			}
 		  }
