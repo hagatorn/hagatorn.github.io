@@ -18,9 +18,8 @@
 		  }
 		  .slider-desc {	
 			background-color: white;
-			max-height: 0;
-			transition: 2s;
-			overflow-y:hidden;
+			max-height: 30%;
+			display:none;
 
 		  	p:last-of-type {margin-bottom:0px; }			
 		  }
@@ -34,10 +33,6 @@
 	    	  height: auto;
 	    	  max-width: 100%;
 		  }
-		  
-		  .slide-up {
-				max-height:30%;
-			}
 		  
 
 	}
