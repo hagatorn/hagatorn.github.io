@@ -9,7 +9,7 @@
 	});
     
     $('.product-slider').hover(function(){
-    $('.slider-desc').toggleClass('slide-up');
+    $('.slider-desc').slideUp();
     return false;
 }); 
   });
