@@ -1,4 +1,6 @@
-name: Knife Rack
+---
+layout: project
+title: Knife Rack
 since: '2014-12-25'
 materials:
   - Sycamore
@@ -8,3 +10,5 @@ purchase: #array of data for etsy or amazon handmade
 images:  #a list or uri relative to site/assets/images/
   - kniferack.jpg
   - kniferack01.jpg
+---
+Some content

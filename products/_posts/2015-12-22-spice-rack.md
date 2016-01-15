@@ -1,4 +1,6 @@
-name: Spice Rack
+---
+layout: project
+title: Spice Rack
 since: '2013-12-25'
 materials:
   - Oak
@@ -12,3 +14,4 @@ description: |
 purchase: #array of data for etsy or amazon handmade
 images:  #a list or uri relative to site/assets/images/
   - spicerack.jpg
+---
