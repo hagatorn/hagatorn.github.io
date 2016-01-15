@@ -1,22 +1,35 @@
-{% assign projects = includes.projects %}
+
+
+{% assign projects = include.projects %}
 
 {% if projects %}
-{{projects}}
-	<ul>
+
+	<ul class="preview-list">
 	{% for p in projects %}
-
+	  <a href="{{p.url}}">
 		<li>
-
+			
 			<h2>{{ p.title }}</h2>
+
 			<img src="/images/{{ p.images[0] }}"/>
 
-			{{ p.description | markdownify }}
+			<ul class="project-meta">
+				<li>
+					<strong>Materials:</strong>
+					{{ p.materials | array_to_sentence_string }}
+				</li>
 
-			- Materials: {{ p.materials | array_to_sentence_string }}
-			- Price: £{{ p.price }}
+				<li>
+					<strong>Price:</strong>
+					£{{ p.price }}
+				</li>
+			
+			</ul>
+			
 
 		</li>
-
+	  </a>
+	  <hr/>
 
 
 	{% endfor %} 
