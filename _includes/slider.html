@@ -1,0 +1,29 @@
+{% assign projects =  include.projects %}
+{% if  projects %}  
+
+  <ul class="product-slider" >
+       
+    
+    {% for p in projects %}
+ 
+     <li >
+	<a href="{{ p.url %}}">
+          <div class="slider-text">
+		
+		  <h2 class="slider-title">{{ p.title }}</h2>          
+		  <div class="slider-desc">
+			{{p.description | markdownify }}
+		  </div>
+
+	  </div>
+
+          <img src="/images/{{ p.images[0] }}" alt="{{p.name}}"/>
+
+        </a>
+      </li>
+
+    
+    {% endfor %}
+    
+  </ul>
+{% endif %}

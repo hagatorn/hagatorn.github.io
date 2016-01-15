@@ -1,0 +1,22 @@
+{% assign images =  include.images %}
+{% if images %}
+		
+	{% if images.size > 1 %}
+		<ul class="product-gallery">
+			{% for image in images %}
+				<li data-thumb="/images/{{image}}" >
+					<img src="/images/{{image}}" />
+				</li>
+
+			{% endfor %}
+
+		</ul>			
+
+
+	{% else %}
+
+		<img src="/images/{{page.images[0]}}" />
+		
+	{% endif %}
+		
+{%endif%}

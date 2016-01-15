@@ -6,28 +6,7 @@ layout: default
 
   <h1 class="page-heading">Home</h1>
 
-  <ul class="product-slider" >
-    {% assign products =  site.data.products %}
-
-    {% for product in products %}
-      {% assign p=product[1] %}
-      <li >
-	<a>
-          <div class="slider-text">
-		
-		  <h2 class="slider-title">{{ p.name }}</h2>          
-		  <div class="slider-desc">
-			{{p.description | markdownify }}
-		  </div>
-
-	  </div>
-
-          <img src="/images/{{ p.images[0] }}" alt="{{p.name}}"/>
-
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  {% include slider.html projects = site.posts %}
 
  
 </div>
