@@ -1,9 +1,32 @@
 .preview-list{
 	
-	
+	a {	
+	}
 	list-style: none outside none;
 	img{	width:200px;
 		height:auto;
+		float:left;
+		
 	}
+	.preview-text{
+	
+	}
+	img, .preview-text {
+		display: inline-block;
+		vertical-align: top;
+  		}
+	li {
+		padding-bottom:5px;
+		border-bottom:1px black;
+		margin-bottom: 5px;
+	}
+
+	li, img {
+  		&:after {
+	   		content: "";
+	   		display: table;
+	    		clear: both;
+  		}
+	}	
 
 }

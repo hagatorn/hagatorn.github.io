@@ -6,30 +6,29 @@
 
 	<ul class="preview-list">
 	{% for p in projects %}
-	  <a href="{{p.url}}">
-		<li>
+	  
+	<li>
+		<a href="{{p.url}}">
+			<div class="preview-text">
+				<h2>{{ p.title }}</h2>
+				<ul class="project-meta">
+					<li>
+						<strong>Materials:</strong>
+						{{ p.materials | array_to_sentence_string }}
+					</li>
+
+					<li>
+						<strong>Price:</strong>
+						£{{ p.price }}
+					</li>
 			
-			<h2>{{ p.title }}</h2>
+				</ul>
+			</div>
 
 			<img src="/images/{{ p.images[0] }}"/>
-
-			<ul class="project-meta">
-				<li>
-					<strong>Materials:</strong>
-					{{ p.materials | array_to_sentence_string }}
-				</li>
-
-				<li>
-					<strong>Price:</strong>
-					£{{ p.price }}
-				</li>
-			
-			</ul>
-			
-
-		</li>
-	  </a>
-	  <hr/>
+		</a>	
+	</li>
+	  
 
 
 	{% endfor %} 
