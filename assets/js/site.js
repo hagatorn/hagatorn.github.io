@@ -8,7 +8,15 @@
 		adaptiveHeight:true
 		});
 	    
- 
+	$('.product-slider').hover(
+	    	function(){
+	    		$('.slider-desc').stop().slideDown();
+	    		return false;
+			},
+		function(){
+			$('.slider-desc').stop().slideUp();
+	    		return false;
+		}); 
 
 	
 	$(".product-gallery").lightSlider({

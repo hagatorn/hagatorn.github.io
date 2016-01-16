@@ -19,14 +19,10 @@
 		  .slider-desc {	
 			background-color: white;
 			max-height: 30%;
-			bottom: -200%;
-			position: absolute;
-			transition: bottom 1s;
-						
+			display:none;
+
 		  	p:last-of-type {margin-bottom:0px; }			
 		  }
-		  
-		  a:hover .slider-desc {bottom:0%;}
 		  
 		  h2, h2:hover, h2:active { 
 		  	color:white; 
