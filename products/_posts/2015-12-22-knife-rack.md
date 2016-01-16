@@ -11,4 +11,4 @@ images:  #a list or uri relative to site/assets/images/
   - kniferack.jpg
   - kniferack01.jpg
 ---
-Some content
+
