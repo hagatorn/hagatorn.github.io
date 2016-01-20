@@ -4,7 +4,7 @@
 - Static site for Hagatorn.com using [Jekyll] (http://jekyllrb.com)
 - Hosted on [GitHub Pages] (https://pages.github.com)
 
-Quite a lot of experimentation at this stage with build tools etc. at this stage.  Expect to see some consonidation and standardisation as the project develops.
+Quite a lot of experimentation at with build tools and libs at this stage.  Expect to see some consolidation and standardisation as the project develops.
 
 In order to work on this project you may need to run the following commands.
 
