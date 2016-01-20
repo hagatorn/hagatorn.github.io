@@ -20,12 +20,16 @@ I think this all depends on nodejs too. Which may have to be the newest version.
 
 Site will than me available locally with:
 
-    jekyll serve
+    bundle exec jekyll serve  // I beleive simply jekyll serve may not truely reproduce the github env
+    
 
 and at github pages sit on:
 
     git push
 
 If this gets more extensive I'll bundle into a launch.sh file.
+
+Branching will be introduced once site has stablised.
+
 Also node may need to be installed will check and spec
 
