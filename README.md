@@ -11,14 +11,11 @@ In order to work on this project you may need to run the following commands.
 Setup Commands:
 
     bundle install //to get all dependencies ready.
-    bourbon install // to make a local copy of the bourbon sass files
-    neat install // to make a local copy of the bourbon neat sass files
-    
-n.b the bitters files are already in the repo as they are designed to be edited.
 
-I think this all depends on nodejs too. Which may have to be the newest version.  Will add a note when I can confirm.
 
-Site will than me available locally with:
+This all depends on nodejs too. Which may have to be the newest version.  Will add a note when I can confirm.
+
+Site will then me available locally with:
 
     bundle exec jekyll serve  // I beleive simply jekyll serve may not truely reproduce the github env
     
