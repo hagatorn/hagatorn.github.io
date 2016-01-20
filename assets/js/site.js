@@ -7,7 +7,7 @@
 		pause: 6000,
 		adaptiveHeight:true
 		});
-	    
+
 	$('.product-slider').hover(
 	    	function(){
 	    		$('.slider-desc').stop().slideDown();
@@ -16,9 +16,9 @@
 		function(){
 			$('.slider-desc').stop().slideUp();
 	    		return false;
-		}); 
+		});
 
-	
+
 	$(".product-gallery").lightSlider({
 		item:1,
 		loop:true,
@@ -27,4 +27,5 @@
 		gallery:true,
 		controls:false
 		});
+
   });
