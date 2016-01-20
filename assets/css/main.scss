@@ -6,9 +6,9 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "../bourbon/bourbon",
+@import "lib/bourbon/bourbon",
 	"base/base",
-	"../neat/neat",
+	"lib/neat/neat",
 	"layout",
 	"footer",
 	"nav",
