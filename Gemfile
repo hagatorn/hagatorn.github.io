@@ -6,6 +6,7 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
 
-gem 'bourbon'
-gem 'neat'
-gem 'bitters'
+# All now checked into repo
+# gem 'bourbon'
+# gem 'neat'
+# gem 'bitters'

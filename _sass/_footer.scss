@@ -1,5 +1,51 @@
 footer {
+  color: #ffffff;
+  background-color: $dark-green;
   border-top: 1px solid $base-border-color;
-  margin: 2em 0;
-  padding-top: 2em;
+  margin: 2em 0 0;
+  padding: 2em;
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 2.1em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+    }
+
+  .logo {
+    display: inline-block;
+    height: 2em;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #ffffff;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: #ffffff;
+    }
+
+  }
+
+  .copyright {
+    border-top: 1px solid #fff;
+    margin: 1em 0 0;
+  }
+
 }
