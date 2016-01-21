@@ -2,14 +2,13 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
+  $hero-background: tint($dark-green, %40);
+  $hero-color: #fff;
   $gradient-angle: 10deg;
   $hero-image: '/images/headboard.jpg';
 
   background-image:url($hero-image);
-  background-color: #324766;
+  background-color: $hero-background;
   background-position: center;
   background-size: cover;
   padding-bottom: 3em;
