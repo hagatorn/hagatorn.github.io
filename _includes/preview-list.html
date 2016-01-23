@@ -6,7 +6,7 @@
 
 	<ul class="preview-list">
 	{% for p in projects %}
-	  
+
 	<li>
 		<a href="{{p.url}}">
 			<div class="preview-text">
@@ -21,16 +21,16 @@
 						<strong>Price:</strong>
 						£{{ p.price }}
 					</li>
-			
+
 				</ul>
 			</div>
 
-			<img src="/images/{{ p.images[0] }}"/>
-		</a>	
+			<img src="/assets/images/{{ p.images[0] }}"/>
+		</a>
 	</li>
-	  
 
 
-	{% endfor %} 
+
+	{% endfor %}
 	</ul>
 {% endif %}

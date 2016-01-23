@@ -2,33 +2,38 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background: tint($dark-green, 40%);
+  $hero-background: $light-green;
   $hero-color: #fff;
   $gradient-angle: 10deg;
-  $hero-image: '/images/headboard.jpg';
+  $hero-image: '/assets/images/banner.jpg';
+  $inner-banner-max-width: 300px;
+  $banner-max-width: $inner-banner-max-width + 40px;
 
-  background-image:url($hero-image);
-  background-color: $hero-background;
-  background-position: center;
-  background-size: cover;
-  padding-bottom: 3em;
+  @include media($banner-max-width) {
+    background-color: $hero-background;
+    background-image: url($hero-image);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3em;
+  }
 
-  .hero-logo img {
+  img {
     height: 4em;
-    margin: 3em auto 1em;
+    margin: 0 auto 1em;
   }
 
   .hero-inner {
     @include clearfix;
-    margin: auto;
-    padding: 0;
-    text-align: center;
     background-color: $dark-green;
-    max-width: 300px;
+    margin: 0 auto;
+    max-width: $inner-banner-max-width;
+    padding: 2em 0;
+    text-align: center;
 
-    @include media($large-screen) {
-      max-width: 33%;
+    @include media($banner-max-width) {
+      padding: 3em 0;
     }
+
 
 
     .hero-copy {
@@ -50,12 +55,8 @@
       p {
         color: $hero-color;
         line-height: 1.4em;
-        margin: 0 auto 3em auto;
+        margin: 0 auto;
 
-        @include media($large-screen) {
-          //font-size: 1.1em;
-          max-width: 40%;
-        }
       }
     }
   }

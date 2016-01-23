@@ -1,12 +1,67 @@
 ---
 layout: default
+about: >
+    All of my original products were first created as christmas gifts for my friends & family.
+    I've gradually collected a nice set of hand tools, some small machinary and made a little workshop
+    so it no longer takes a month to make each one.  A whole lot of love and craft still goes into
+    each item just not quite so much blood, sweat and tears.
+
+commissions: >
+    I only ever make short runs of any of my products and I love to be inventive so
+    I'm always excited about commisions.
+    If you want something original, made well, email me.
+    I'm more than happy to tailer a solution to a specific space in your
+    house or any other requirement.
 ---
+{% assign products = site.categories.products  %}
 
-<div class="home">
+<div class="about">
 
-  <h1 class="page-heading">Home</h1>
+  <h2 class="section-heading">About</h2>
 
-  {% include slider.html projects = site.posts %}
+  <img src="/assets/images/headboard.jpg"/>
 
- 
+  {{ page.about | markdownify }}
+
+</div>
+
+<div class="products-wrapper">
+    <h2 class="section-heading">Products</h2>
+    <div class="products cards">
+
+      <div class="product-group card">
+        <a href={{products[0].url}}>
+          <div class="card-image"><img src="/assets/images/{{ products[0].images[0]}}"/></div>
+          <h3>{{products[0].title}}</h3>
+          <p>{{products[0].description | truncatewords: 10 }}</p>
+          </a>
+      </div>
+
+      <div class="product-group card">
+        <a href={{products[1].url}}>
+          <div class="card-image"><img src="/assets/images/{{ products[1].images[0]}}"/></div>
+          <h3>{{products[1].title}}</h3>
+          <p>{{products[1].description | truncatewords: 10 }}</p>
+          </a>
+      </div>
+
+      <div class="product-group card">
+        <a href={{products[0].url}}>
+          <div class="card-image"><img src="/assets/images/{{ products[0].images[0]}}"/></div>
+          <h3>{{products[0].title}}</h3>
+          <p>{{products[0].description | truncatewords: 10 }}</p>
+          </a>
+      </div>
+
+    </div>
+</div>
+
+<div class="commisions">
+
+  <h2 class="section-heading">Commissions</h2>
+
+  <img src="/assets/images/fender.jpg"/>
+
+  {{ page.commissions | markdownify }}
+
 </div>

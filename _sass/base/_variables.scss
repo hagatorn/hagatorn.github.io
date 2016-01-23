@@ -21,6 +21,7 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $dark-green: #4c5b52;
+$light-green: tint($dark-green, 40%);
 
 // Font Colors
 $base-font-color: $dark-gray;

@@ -6,7 +6,8 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "lib/bourbon/bourbon",
+@import "lib/normalize",
+	"lib/bourbon/bourbon",
 	"base/base",
 	"lib/neat/neat",
 	"layout",
@@ -14,5 +15,6 @@
 	"nav",
 	"preview-list",
 	"banner",
-	"slider"
+	"slider",
+	"cards"
 	;

@@ -1,0 +1,48 @@
+.products-wrapper {
+  border-top: $light-green thin;
+  padding-top: 3em;
+}
+
+.cards {
+  @include justify-content(space-between);
+  width: 100%;
+  display: block;
+  @include clearfix;
+
+  .card {
+
+    @include media($medium-screen) {
+
+      @include span-columns(6);
+      @include omega(2n);
+
+      &:last-of-type {
+        @include span-columns(12);
+        }
+    }
+
+    @include media($large-screen) {
+
+      @include span-columns(4);
+      @include omega-reset(2n);
+      @include omega(3n);
+
+      &:last-of-type {
+        @include span-columns(4);
+        }
+    }
+
+
+ }
+
+  .card-image {
+    //height: 15em;
+    background: whitesmoke;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+
+    }
+  }
+}
