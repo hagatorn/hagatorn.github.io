@@ -1,32 +1,43 @@
 .preview-list{
-	
-	a {	
-	}
-	list-style: none outside none;
-	img{	width:200px;
-		height:auto;
-		float:left;
-		
-	}
-	.preview-text{
-	
-	}
-	img, .preview-text {
-		display: inline-block;
-		vertical-align: top;
-  		}
-	li {
-		padding-bottom:5px;
-		border-bottom:1px black;
-		margin-bottom: 5px;
+
+  list-style: none outside none;
+
+  a { @extend %white-anchor;}
+
+  img,
+  div {
+    @include media($medium-screen) {
+
+      @include span-columns(6);
+      @include omega(2n);
+
+  	}
 	}
 
-	li, img {
-  		&:after {
-	   		content: "";
-	   		display: table;
-	    		clear: both;
-  		}
-	}	
+	img{
+        height: auto;
+	}
+
+	li {
+		@include clearfix;
+		background-color: $dark-green;
+		margin-bottom: 1em;
+
+	}
+
+  .preview-text {
+	  margin: 0 0 .5em ;
+    padding: 0 .5em;
+
+	  @include media($medium-screen) {
+			 margin-top: 1em;
+       padding: 0 .5em 0 0;
+		 }
+
+     li {
+			 margin-bottom: 0;
+		 }
+
+   }
 
 }

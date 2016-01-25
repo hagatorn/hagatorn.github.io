@@ -1,3 +1,31 @@
 .page-content {
     @include outer-container;
+    padding: 0 .5em;
+}
+
+.about,
+.commissions {
+  @include clearfix;
+  img,
+  p {
+    @include media($medium-screen) {
+
+      @include span-columns(6);
+      &:last {
+        @include omega();
+      }
+    }
+
+  }
+}
+
+%white-anchor {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+  }
 }
