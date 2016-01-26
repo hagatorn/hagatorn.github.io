@@ -23,5 +23,8 @@ exclude: [bourbon, neat, Gemfile, Gemfile.lock, node_modules, gulpfile.js, packa
 # Build settings
 markdown: kramdown
 
+sass:
+  style: compressed
+
 gems:
   - jekyll-sitemap
