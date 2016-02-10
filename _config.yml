@@ -19,12 +19,12 @@ github_username:  hagatorn
 
 permalink: /:categories/:title.html
 
-exclude: [bourbon, neat, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json]
+exclude: [Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json]
 # Build settings
 markdown: kramdown
 
 sass:
   style: compressed
 
-gems:
-  - jekyll-sitemap
+
+
